@@ -1,28 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nexus Digital - Creative agency for web design, branding, and digital marketing">
-    <title>Nexus Digital - Creative Agency</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Creative Studio - Digital Excellence</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#home" class="nav__logo">Nexus<span class="dot">.</span></a>
-            <ul class="nav__menu" id="navMenu">
-                <li><a href="#home" class="nav__link">Home</a></li>
-                <li><a href="#services" class="nav__link">Services</a></li>
-                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
-                <li><a href="#team" class="nav__link">Team</a></li>
-                <li><a href="#contact" class="nav__link nav__cta">Contact</a></li>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">CREATIVE.</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="nav__toggle" id="navToggle">
+            <button class="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,284 +27,508 @@
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-        <div class="hero__container container">
-            <div class="hero__content">
-                <span class="hero__tag">Welcome to Nexus Digital</span>
-                <h1 class="hero__title">We Create Digital <span class="gradient-text">Excellence</span></h1>
-                <p class="hero__description">Transforming ideas into stunning digital experiences that captivate and inspire your audience.</p>
-                <div class="hero__buttons">
-                    <a href="#contact" class="btn btn--primary">Get Started</a>
-                    <a href="#portfolio" class="btn btn--secondary">View Work</a>
-                </div>
-                <div class="hero__stats">
-                    <div class="stat"><span class="stat__num">250+</span><span class="stat__label">Projects</span></div>
-                    <div class="stat"><span class="stat__num">98%</span><span class="stat__label">Satisfaction</span></div>
-                    <div class="stat"><span class="stat__num">50+</span><span class="stat__label">Team</span></div>
-                </div>
-            </div>
-            <div class="hero__image">
-                <div class="floating-shape shape-1"></div>
-                <div class="floating-shape shape-2"></div>
-                <div class="floating-shape shape-3"></div>
-            </div>
+    <!-- Section 1: Hero with Parallax Effect -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-text">We Create</span>
+                <span class="reveal-text">Digital Magic</span>
+            </h1>
+            <p class="hero-subtitle reveal-text">Transforming ideas into stunning digital experiences</p>
+            <button class="cta-button">Start Your Project</button>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse"></div>
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section class="services" id="services">
+    <!-- Section 2: About with Split Layout -->
+    <section id="about" class="about">
         <div class="container">
-            <div class="section__header">
-                <span class="section__tag">What We Do</span>
-                <h2 class="section__title">Our Services</h2>
-            </div>
-            <div class="services__grid">
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="500" fill="url(#gradient1)"/>
+                            <circle cx="200" cy="250" r="100" fill="rgba(255,255,255,0.1)"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
                         </svg>
                     </div>
-                    <h3 class="service__title">Web Design</h3>
-                    <p class="service__desc">Creating beautiful, responsive websites that engage and convert visitors.</p>
                 </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-9-9h6m6 0h6"/>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Brand Identity</h3>
-                    <p class="service__desc">Building memorable brands that resonate with your target audience.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">Digital Marketing</h3>
-                    <p class="service__desc">Strategic marketing campaigns that drive growth and measurable ROI.</p>
-                </div>
-                <div class="service__card">
-                    <div class="service__icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
-                        </svg>
-                    </div>
-                    <h3 class="service__title">App Development</h3>
-                    <p class="service__desc">Native and cross-platform apps that deliver exceptional experiences.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO SECTION -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section__header">
-                <span class="section__tag">Our Work</span>
-                <h2 class="section__title">Featured Projects</h2>
-            </div>
-            <div class="portfolio__grid">
-                <div class="portfolio__item large">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Project 1">
-                    <div class="portfolio__overlay">
-                        <span class="portfolio__cat">Web Development</span>
-                        <h3 class="portfolio__title">E-Commerce Platform</h3>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600" alt="Project 2">
-                    <div class="portfolio__overlay">
-                        <span class="portfolio__cat">Branding</span>
-                        <h3 class="portfolio__title">Brand Redesign</h3>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600" alt="Project 3">
-                    <div class="portfolio__overlay">
-                        <span class="portfolio__cat">UI/UX</span>
-                        <h3 class="portfolio__title">Banking App</h3>
-                    </div>
-                </div>
-                <div class="portfolio__item">
-                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=600" alt="Project 4">
-                    <div class="portfolio__overlay">
-                        <span class="portfolio__cat">Marketing</span>
-                        <h3 class="portfolio__title">Social Campaign</h3>
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Crafting Digital Excellence Since 2020</h2>
+                    <p class="section-text">We are a team of passionate designers and developers dedicated to creating exceptional digital experiences. Our approach combines creativity with technical expertise to deliver solutions that exceed expectations.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="150">0</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="50">0</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p>Awards Won</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials" id="testimonials">
+    <!-- Section 3: Services with Card Hover Effects -->
+    <section id="services" class="services">
         <div class="container">
-            <div class="section__header">
-                <span class="section__tag">Client Feedback</span>
-                <h2 class="section__title">What Our Clients Say</h2>
+            <span class="section-tag">What We Do</span>
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="10" fill="url(#iconGrad1)"/>
+                            <path d="M20 25H40M20 30H40M20 35H35" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="iconGrad1">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, responsive websites that captivate your audience and drive results.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="10" fill="url(#iconGrad2)"/>
+                            <circle cx="30" cy="30" r="12" stroke="white" stroke-width="2"/>
+                            <path d="M30 22V30L36 33" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="iconGrad2">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Robust, scalable solutions built with cutting-edge technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="10" fill="url(#iconGrad3)"/>
+                            <path d="M25 30L30 35L40 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="iconGrad3">
+                                    <stop offset="0%" stop-color="#4facfe"/>
+                                    <stop offset="100%" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Brand Strategy</h3>
+                    <p>Strategic branding that tells your story and connects with customers.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="10" fill="url(#iconGrad4)"/>
+                            <rect x="20" y="25" width="20" height="15" stroke="white" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="iconGrad4">
+                                    <stop offset="0%" stop-color="#fa709a"/>
+                                    <stop offset="100%" stop-color="#fee140"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive interfaces that provide seamless user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="10" fill="url(#iconGrad5)"/>
+                            <circle cx="30" cy="25" r="5" stroke="white" stroke-width="2"/>
+                            <path d="M30 32L25 40H35L30 32Z" stroke="white" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="iconGrad5">
+                                    <stop offset="0%" stop-color="#a8edea"/>
+                                    <stop offset="100%" stop-color="#fed6e3"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven campaigns that boost your online presence and growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" rx="10" fill="url(#iconGrad6)"/>
+                            <path d="M25 30H35M30 25V35" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="iconGrad6">
+                                    <stop offset="0%" stop-color="#ff9a9e"/>
+                                    <stop offset="100%" stop-color="#fecfef"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Consulting</h3>
+                    <p>Expert guidance to help your business thrive in the digital world.</p>
+                </div>
             </div>
-            <div class="testimonials__slider">
-                <div class="testimonials__track" id="testimonialTrack">
-                    <div class="testimonial__card">
-                        <div class="stars">★★★★★</div>
-                        <p class="testimonial__text">"Nexus Digital transformed our online presence completely. Their attention to detail and creativity exceeded expectations."</p>
-                        <div class="testimonial__author">
-                            <img src="https://i.pravatar.cc/80?img=1" alt="Sarah">
-                            <div>
-                                <h4>Sarah Johnson</h4>
-                                <p>CEO, TechStart</p>
+        </div>
+    </section>
+
+    <!-- Section 4: Portfolio with Filter & Lightbox -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <span class="section-tag">Our Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#portGrad1)"/>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="24">E-Commerce</text>
+                            <defs>
+                                <linearGradient id="portGrad1">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#portGrad2)"/>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="24">Brand Identity</text>
+                            <defs>
+                                <linearGradient id="portGrad2">
+                                    <stop offset="0%" stop-color="#f093fb"/>
+                                    <stop offset="100%" stop-color="#f5576c"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Rebranding</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#portGrad3)"/>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="24">Mobile App</text>
+                            <defs>
+                                <linearGradient id="portGrad3">
+                                    <stop offset="0%" stop-color="#4facfe"/>
+                                    <stop offset="100%" stop-color="#00f2fe"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Mobile</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#portGrad4)"/>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="24">Portfolio Site</text>
+                            <defs>
+                                <linearGradient id="portGrad4">
+                                    <stop offset="0%" stop-color="#fa709a"/>
+                                    <stop offset="100%" stop-color="#fee140"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Creative Portfolio</h3>
+                        <p>Web Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#portGrad5)"/>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="24">Logo Design</text>
+                            <defs>
+                                <linearGradient id="portGrad5">
+                                    <stop offset="0%" stop-color="#a8edea"/>
+                                    <stop offset="100%" stop-color="#fed6e3"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Startup Branding</h3>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="url(#portGrad6)"/>
+                            <text x="200" y="150" text-anchor="middle" fill="white" font-size="24">Social App</text>
+                            <defs>
+                                <linearGradient id="portGrad6">
+                                    <stop offset="0%" stop-color="#ff9a9e"/>
+                                    <stop offset="100%" stop-color="#fecfef"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Social Network App</h3>
+                        <p>Mobile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Testimonials Slider -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <span class="section-tag">Testimonials</span>
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <p>"Working with this team was an absolute pleasure. They transformed our vision into reality and exceeded all expectations. The attention to detail and creativity is unmatched."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <svg width="60" height="60" viewBox="0 0 60 60">
+                                        <circle cx="30" cy="30" r="30" fill="url(#avatarGrad1)"/>
+                                        <text x="30" y="38" text-anchor="middle" fill="white" font-size="24" font-weight="bold">JD</text>
+                                        <defs>
+                                            <linearGradient id="avatarGrad1">
+                                                <stop offset="0%" stop-color="#667eea"/>
+                                                <stop offset="100%" stop-color="#764ba2"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="author-info">
+                                    <h4>John Doe</h4>
+                                    <p>CEO, TechCorp</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial__card">
-                        <div class="stars">★★★★★</div>
-                        <p class="testimonial__text">"Working with this team was a game-changer. They delivered beyond what we imagined and on time!"</p>
-                        <div class="testimonial__author">
-                            <img src="https://i.pravatar.cc/80?img=12" alt="Michael">
-                            <div>
-                                <h4>Michael Chen</h4>
-                                <p>Founder, GrowthHub</p>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The professionalism and expertise demonstrated throughout our project was exceptional. Our new website has significantly improved our online presence and customer engagement."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <svg width="60" height="60" viewBox="0 0 60 60">
+                                        <circle cx="30" cy="30" r="30" fill="url(#avatarGrad2)"/>
+                                        <text x="30" y="38" text-anchor="middle" fill="white" font-size="24" font-weight="bold">SM</text>
+                                        <defs>
+                                            <linearGradient id="avatarGrad2">
+                                                <stop offset="0%" stop-color="#f093fb"/>
+                                                <stop offset="100%" stop-color="#f5576c"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Miller</h4>
+                                    <p>Founder, DesignHub</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial__card">
-                        <div class="stars">★★★★★</div>
-                        <p class="testimonial__text">"Professional, creative, results-driven. Nexus helped us achieve 300% growth in just 6 months."</p>
-                        <div class="testimonial__author">
-                            <img src="https://i.pravatar.cc/80?img=5" alt="Emily">
-                            <div>
-                                <h4>Emily Rodriguez</h4>
-                                <p>Marketing Director, Bloom</p>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Outstanding work! They took the time to understand our business needs and delivered a solution that perfectly aligns with our goals. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <svg width="60" height="60" viewBox="0 0 60 60">
+                                        <circle cx="30" cy="30" r="30" fill="url(#avatarGrad3)"/>
+                                        <text x="30" y="38" text-anchor="middle" fill="white" font-size="24" font-weight="bold">MJ</text>
+                                        <defs>
+                                            <linearGradient id="avatarGrad3">
+                                                <stop offset="0%" stop-color="#4facfe"/>
+                                                <stop offset="100%" stop-color="#00f2fe"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Michael Johnson</h4>
+                                    <p>Marketing Director, InnovateCo</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="slider__btn prev" id="prevBtn">‹</button>
-                <button class="slider__btn next" id="nextBtn">›</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM SECTION -->
-    <section class="team" id="team">
-        <div class="container">
-            <div class="section__header">
-                <span class="section__tag">Meet Our Team</span>
-                <h2 class="section__title">Creative Minds</h2>
-            </div>
-            <div class="team__grid">
-                <div class="team__card">
-                    <img src="https://i.pravatar.cc/300?img=33" alt="Alex">
-                    <div class="team__info">
-                        <h3>Alex Morgan</h3>
-                        <p>Creative Director</p>
-                        <div class="team__social">
-                            <a href="#">LinkedIn</a>
-                            <a href="#">Twitter</a>
-                        </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous">‹</button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
                     </div>
-                </div>
-                <div class="team__card">
-                    <img src="https://i.pravatar.cc/300?img=13" alt="Jordan">
-                    <div class="team__info">
-                        <h3>Jordan Lee</h3>
-                        <p>Lead Developer</p>
-                        <div class="team__social">
-                            <a href="#">LinkedIn</a>
-                            <a href="#">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team__card">
-                    <img src="https://i.pravatar.cc/300?img=47" alt="Sam">
-                    <div class="team__info">
-                        <h3>Sam Taylor</h3>
-                        <p>UX Designer</p>
-                        <div class="team__social">
-                            <a href="#">LinkedIn</a>
-                            <a href="#">Dribbble</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team__card">
-                    <img src="https://i.pravatar.cc/300?img=20" alt="Riley">
-                    <div class="team__info">
-                        <h3>Riley Kim</h3>
-                        <p>Marketing Strategist</p>
-                        <div class="team__social">
-                            <a href="#">LinkedIn</a>
-                            <a href="#">Twitter</a>
-                        </div>
-                    </div>
+                    <button class="slider-btn next" aria-label="Next">›</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="contact" id="contact">
+    <!-- Section 6: Contact Form -->
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section__header">
-                <span class="section__tag">Get In Touch</span>
-                <h2 class="section__title">Let's Work Together</h2>
-            </div>
-            <div class="contact__grid">
-                <form class="contact__form" id="contactForm">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Subject" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Create Something Amazing Together</h2>
+                    <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 8L10.89 13.26C11.5 13.67 12.5 13.67 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>hello@creative.studio</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Mon - Fri, 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
-                <div class="contact__info">
-                    <div class="info__item">
-                        <h3>Email</h3>
-                        <p>hello@nexusdigital.com</p>
-                    </div>
-                    <div class="info__item">
-                        <h3>Phone</h3>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="info__item">
-                        <h3>Address</h3>
-                        <p>123 Creative Street<br>San Francisco, CA 94102</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__grid">
-                <div class="footer__col">
-                    <h3>Nexus Digital</h3>
-                    <p>Creating digital excellence since 2020</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">CREATIVE.</h3>
+                    <p>Creating exceptional digital experiences that inspire and engage.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="footer__col">
+                <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#team">Team</a>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="footer__col">
-                    <h4>Follow Us</h4>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">Development</a></li>
+                        <li><a href="#services">Branding</a></li>
+                        <li><a href="#services">Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest updates and news.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
-            <div class="footer__bottom">
-                <p>&copy; 2024 Nexus Digital. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creative Studio. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
