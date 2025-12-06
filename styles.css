@@ -1,53 +1,944 @@
+# Nexus Digital Agency - Complete Website Files
+
+## 🎨 Design References
+- **Hero Section**: Awwwards - "Locomotive Scroll" design pattern
+- **Services Cards**: Dribbble - "Glassmorphism Service Cards" by Cuberto
+- **Portfolio Grid**: Awwwards - "Bento Grid Layout" trending design
+- **Testimonials**: Dribbble - "Card Carousel" interaction pattern
+- **Team Section**: Behance - "Profile Card Hover Effects"
+
+## 📁 Folder Structure
+```
+nexus-digital-agency/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── images/
+│   ├── (add your images here)
+└── README.md
+```
+
+---
+
+## 📄 **FILE 1: index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexus Digital - Creative agency for web design, branding, and digital marketing">
+    <title>Nexus Digital - Creative Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Nexus<span class="dot">.</span></a>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                <li><a href="#team" class="nav__link">Team</a></li>
+                <li><a href="#contact" class="nav__link nav__cta">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <span class="hero__tag">Welcome to Nexus Digital</span>
+                <h1 class="hero__title">We Create Digital <span class="gradient-text">Excellence</span></h1>
+                <p class="hero__description">Transforming ideas into stunning digital experiences that captivate and inspire your audience.</p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn--primary">Get Started</a>
+                    <a href="#portfolio" class="btn btn--secondary">View Work</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat"><span class="stat__num">250+</span><span class="stat__label">Projects</span></div>
+                    <div class="stat"><span class="stat__num">98%</span><span class="stat__label">Satisfaction</span></div>
+                    <div class="stat"><span class="stat__num">50+</span><span class="stat__label">Team</span></div>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">What We Do</span>
+                <h2 class="section__title">Our Services</h2>
+            </div>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Web Design</h3>
+                    <p class="service__desc">Creating beautiful, responsive websites that engage and convert visitors.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-9-9h6m6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Brand Identity</h3>
+                    <p class="service__desc">Building memorable brands that resonate with your target audience.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Digital Marketing</h3>
+                    <p class="service__desc">Strategic marketing campaigns that drive growth and measurable ROI.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">App Development</h3>
+                    <p class="service__desc">Native and cross-platform apps that deliver exceptional experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Our Work</span>
+                <h2 class="section__title">Featured Projects</h2>
+            </div>
+            <div class="portfolio__grid">
+                <div class="portfolio__item large">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Project 1">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__cat">Web Development</span>
+                        <h3 class="portfolio__title">E-Commerce Platform</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600" alt="Project 2">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__cat">Branding</span>
+                        <h3 class="portfolio__title">Brand Redesign</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600" alt="Project 3">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__cat">UI/UX</span>
+                        <h3 class="portfolio__title">Banking App</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=600" alt="Project 4">
+                    <div class="portfolio__overlay">
+                        <span class="portfolio__cat">Marketing</span>
+                        <h3 class="portfolio__title">Social Campaign</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Client Feedback</span>
+                <h2 class="section__title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials__slider">
+                <div class="testimonials__track" id="testimonialTrack">
+                    <div class="testimonial__card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial__text">"Nexus Digital transformed our online presence completely. Their attention to detail and creativity exceeded expectations."</p>
+                        <div class="testimonial__author">
+                            <img src="https://i.pravatar.cc/80?img=1" alt="Sarah">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial__text">"Working with this team was a game-changer. They delivered beyond what we imagined and on time!"</p>
+                        <div class="testimonial__author">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="Michael">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>Founder, GrowthHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial__text">"Professional, creative, results-driven. Nexus helped us achieve 300% growth in just 6 months."</p>
+                        <div class="testimonial__author">
+                            <img src="https://i.pravatar.cc/80?img=5" alt="Emily">
+                            <div>
+                                <h4>Emily Rodriguez</h4>
+                                <p>Marketing Director, Bloom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider__btn prev" id="prevBtn">‹</button>
+                <button class="slider__btn next" id="nextBtn">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Meet Our Team</span>
+                <h2 class="section__title">Creative Minds</h2>
+            </div>
+            <div class="team__grid">
+                <div class="team__card">
+                    <img src="https://i.pravatar.cc/300?img=33" alt="Alex">
+                    <div class="team__info">
+                        <h3>Alex Morgan</h3>
+                        <p>Creative Director</p>
+                        <div class="team__social">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <img src="https://i.pravatar.cc/300?img=13" alt="Jordan">
+                    <div class="team__info">
+                        <h3>Jordan Lee</h3>
+                        <p>Lead Developer</p>
+                        <div class="team__social">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <img src="https://i.pravatar.cc/300?img=47" alt="Sam">
+                    <div class="team__info">
+                        <h3>Sam Taylor</h3>
+                        <p>UX Designer</p>
+                        <div class="team__social">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Dribbble</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__card">
+                    <img src="https://i.pravatar.cc/300?img=20" alt="Riley">
+                    <div class="team__info">
+                        <h3>Riley Kim</h3>
+                        <p>Marketing Strategist</p>
+                        <div class="team__social">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Get In Touch</span>
+                <h2 class="section__title">Let's Work Together</h2>
+            </div>
+            <div class="contact__grid">
+                <form class="contact__form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+                <div class="contact__info">
+                    <div class="info__item">
+                        <h3>Email</h3>
+                        <p>hello@nexusdigital.com</p>
+                    </div>
+                    <div class="info__item">
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info__item">
+                        <h3>Address</h3>
+                        <p>123 Creative Street<br>San Francisco, CA 94102</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3>Nexus Digital</h3>
+                    <p>Creating digital excellence since 2020</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#team">Team</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Follow Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Nexus Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+```
+
+---
+
+## 🎨 **FILE 2: css/style.css**
+
+```css
+/* ===== VARIABLES ===== */
+:root {
+    --primary: #6366f1;
+    --secondary: #8b5cf6;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --text: #334155;
+    --border: #e2e8f0;
+    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* ===== RESET ===== */
 * {
-border-radius: 10px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* Contact */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== UTILITIES ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gradient-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 20px;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.dot {
+    color: var(--primary);
+}
+
+.nav__menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__link {
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav__link:hover {
+    color: var(--primary);
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient);
+    transition: width 0.3s;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.nav__cta {
+    background: var(--gradient);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+
+.nav__cta::after {
+    display: none;
+}
+
+.nav__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav__toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--dark);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: var(--gradient);
+    color: white;
+    box-shadow: 0 10px 30px rgba(99,102,241,0.3);
+}
+
+.btn--primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(99,102,241,0.4);
+}
+
+.btn--secondary {
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn--secondary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero__tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(99,102,241,0.1);
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.hero__description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.hero__stats {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat__num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.stat__label {
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.hero__image {
+    height: 500px;
+    background: var(--gradient);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    animation: float 6s ease-in-out infinite;
+}
+
+.shape-1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+}
+
+.shape-2 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 15%;
+    animation-delay: -2s;
+}
+
+.shape-3 {
+    width: 80px;
+    height: 80px;
+    top: 60%;
+    left: 60%;
+    animation-delay: -4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 100px 0;
+}
+
+.section__header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section__tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(99,102,241,0.1);
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+/* ===== SERVICES ===== */
+.services {
+    background: white;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service__card {
+    padding: 2.5rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+}
+
+.service__card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.service__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.service__icon svg {
+    stroke: white;
+}
+
+.service__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.service__desc {
+    line-height: 1.8;
+}
+
+/* ===== PORTFOLIO ===== */
+.portfolio {
+    background: var(--light);
+}
+
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio__item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+}
+
+.portfolio__item.large {
+    grid-column: span 2;
+}
+
+.portfolio__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.portfolio__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio__item:hover .portfolio__overlay {
+    opacity: 1;
+}
+
+.portfolio__item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio__cat {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio__title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+    background: white;
+}
+
+.testimonials__slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials__track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.testimonial__card {
+    min-width: 100%;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+    border: 1px solid var(--border);
+}
+
+.stars {
+    color: #fbbf24;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.testimonial__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial__author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonial__author h4 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.testimonial__author p {
+    font-size: 0.9rem;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--gradient);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.slider__btn:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* ===== TEAM ===== */
+.team {
+    background: var(--light);
+}
+
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team__card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.team__card:hover {
+    transform: translateY(-10px);
+}
+
+.team__card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.team__info {
+    padding: 1.5rem;
+}
+
+.team__info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.team__info p {
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.team__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.team__social a {
+    color: var(--primary);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.team__social a:hover {
+    color: var(--secondary);
+}
+
+/* ===== CONTACT ===== */
 .contact {
-padding: 3rem 0;
-text-align: center;
+    background: white;
 }
 
-
-form {
-display: grid;
-gap: 1rem;
-max-width: 500px;
-margin: auto;
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
 }
 
-
-input, textarea {
-padding: 0.8rem;
-border: 1px solid #ccc;
-border-radius: 8px;
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-
-button {
-background: #4a7dfc;
-color: white;
-border: none;
-padding: 0.8rem;
-border-radius: 8px;
-}
-
-
-/* Footer */
-.footer {
-padding: 1rem;
-background: #e6e6e6;
-text-align: center;
-margin-top: 3rem;
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
-.hero-content {
-grid-template-columns: 1fr;
-text-align: center;
-}
-}
+.contact__form input,
+.contact__form textarea {
+    padding: 1rem;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    font-family: inherit;
+    font
