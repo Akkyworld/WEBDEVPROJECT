@@ -1,126 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TravelVista</title>
-
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FinEdge — Finance Management</title>
+<link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
-<header id="header">
-  <div class="container nav-inner">
-    <div class="brand">TravelVista</div>
-
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#popular">Destinations</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Mobile Menu Button -->
-    <div class="menu-btn" id="menuBtn">&#9776;</div>
-  </div>
-
-  <!-- Mobile Dropdown -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#popular">Destinations</a>
-    <a href="#services">Services</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-  </div>
+<header class="header">
+<div class="container nav">
+<h1 class="logo">FinEdge</h1>
+<nav>
+<ul class="nav-links">
+<li><a href="#hero">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
 
 <!-- HERO SECTION -->
-<main id="home" class="hero">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="media/hero.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div>
-
-  <div class="hero-inner container">
-    <h1>Explore The World With Us</h1>
-    <p>Your dream destinations are just a click away.</p>
-    <a href="#popular" class="btn">Get Started</a>
-  </div>
-</main>
-
-
-<!-- DESTINATIONS -->
-<section id="popular" class="container">
-  <h2 class="section-title">Popular Destinations</h2>
-
-  <div class="grid destinations">
-    <article class="card">
-      <img src="bali.jpeg" alt="Bali Beach" loading="lazy">
-      <div class="card-body">
-        <h3>Bali</h3>
-        <p>Beaches, temples and tropical paradise.</p>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="dubai.jpg" alt="Dubai Skyline" loading="lazy">
-      <div class="card-body">
-        <h3>Dubai</h3>
-        <p>Luxury, skyscrapers and desert adventures.</p>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="media/switzerland.jpg" alt="Swiss Alps" loading="lazy">
-      <div class="card-body">
-        <h3>Switzerland</h3>
-        <p>Snowy peaks and breathtaking views.</p>
-      </div>
-    </article>
-  </div>
+<section id="hero" class="hero">
+<div class="container hero-content">
+<div class="hero-text">
+<h1>Take Control of Your Financial Future</h1>
+<p>Track your spending, manage budgets, and visualize your growth using a clean and intuitive dashboard.</p>
+<button class="cta">Get Started</button>
+</div>
+<img src="images/hero.svg" alt="Finance Illustration" class="hero-img" />
+</div>
 </section>
 
 
-<!-- SERVICES -->
-<section id="services" class="container">
-  <h2 class="section-title">Our Services</h2>
-
-  <div class="grid services-grid">
-    <div>
-      <p>We help you plan your trips end-to-end with ease and comfort.</p>
-      <ul class="list">
-        <li>Travel planning</li>
-        <li>Hotel booking</li>
-        <li>Flight arrangement</li>
-      </ul>
-    </div>
-
-    <div class="testimonial">
-      <strong>What Travelers Say</strong>
-      <p>"Amazing experience! Highly recommended."</p>
-    </div>
-  </div>
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+<div class="container">
+<h2>About FinEdge</h2>
+<p>FinEdge is inspired by award-winning dashboards from Dribbble & Awwwards. Designed for clarity, simplicity, and efficiency.</p>
+<div class="about-grid">
+<div class="card">✔ Budget Planning</div>
+<div class="card">✔ Goal Tracking</div>
+<div class="card">✔ Secure Management</div>
+</div>
+</div>
 </section>
 
 
-<!-- CONTACT -->
-<section id="contact" class="container">
-  <h2 class="section-title">Contact</h2>
-  <p>Email us at:</p>
-  <a href="mailto:info@travelvista.com" class="btn">info@travelvista.com</a>
-</section>
-
-
-<footer>
-  <p>© <span id="year"></span> TravelVista — All rights reserved.</p>
-</footer>
-
-<script src="js/script.js"></script>
-
-</body>
+<!-- FEATURES SECTION -->
+<section id="features" class="features">
+<div class="container">
+<h2>Features</h2>
+<div class="feature-grid">
+<div class="feature-card">
+<img src="images/feature1.svg" />
+<h3>Smart Budgeting</h3>
+<p>Automatically categorize your expenses and visualize where your money goes.</p>
 </html>
