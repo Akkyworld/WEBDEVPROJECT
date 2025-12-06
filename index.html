@@ -1,72 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelVista</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelVista</title>
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">TravelVista</h2>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<header id="header">
+  <div class="container nav-inner">
+    <div class="brand">TravelVista</div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#popular">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#popular">Destinations</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </div>
 </header>
 
+
 <!-- HERO SECTION -->
-<section id="hero" class="hero">
-    <div class="hero-text">
-        <h1>Explore The World With Us</h1>
-        <p>Your dream destinations are just a click away.</p>
-        <button class="btn">Get Started</button>
-    </div>
-</section>
+<main id="home" class="hero">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="media/hero.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="hero-inner container">
+    <h1>Explore The World With Us</h1>
+    <p>Your dream destinations are just a click away.</p>
+    <a href="#popular" class="btn">Get Started</a>
+  </div>
+</main>
+
 
 <!-- DESTINATIONS -->
-<section id="destinations" class="destinations">
-    <h2>Popular Destinations</h2>
-    <div class="grid">
-        <div class="card"><img src="images/p1.jpg" alt=""><h3>Bali</h3></div>
-        <div class="card"><img src="images/p2.jpg" alt=""><h3>Dubai</h3></div>
-        <div class="card"><img src="images/p3.jpg" alt=""><h3>Switzerland</h3></div>
-    </div>
+<section id="popular" class="container">
+  <h2 class="section-title">Popular Destinations</h2>
+
+  <div class="grid destinations">
+    <article class="card">
+      <img src="media/bali.jpg" alt="Bali Beach" loading="lazy">
+      <div class="card-body">
+        <h3>Bali</h3>
+        <p>Beaches, temples and tropical paradise.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="media/dubai.jpg" alt="Dubai Skyline" loading="lazy">
+      <div class="card-body">
+        <h3>Dubai</h3>
+        <p>Luxury, skyscrapers and desert adventures.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="media/switzerland.jpg" alt="Swiss Alps" loading="lazy">
+      <div class="card-body">
+        <h3>Switzerland</h3>
+        <p>Snowy peaks and breathtaking views.</p>
+      </div>
+    </article>
+  </div>
 </section>
+
 
 <!-- SERVICES -->
-<section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-        <div class="s-card">Travel Planning</div>
-        <div class="s-card">Hotel Booking</div>
-        <div class="s-card">Flight Arrangement</div>
+<section id="services" class="container">
+  <h2 class="section-title">Our Services</h2>
+
+  <div class="grid services-grid">
+    <div>
+      <p>We help you plan your trips end-to-end with ease and comfort.</p>
+      <ul class="list">
+        <li>Travel planning</li>
+        <li>Hotel booking</li>
+        <li>Flight arrangement</li>
+      </ul>
     </div>
+
+    <div class="testimonial">
+      <strong>What Travelers Say</strong>
+      <p>"Amazing experience! Highly recommended."</p>
+    </div>
+  </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="testimonials">
-    <h2>What Travelers Say</h2>
-    <p>"Amazing experience! Highly recommended."</p>
-</section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Stay Connected</h2>
-    <input type="email" placeholder="Enter your email">
-    <button class="btn">Subscribe</button>
+<section id="contact" class="container">
+  <h2 class="section-title">Contact</h2>
+  <p>Email us at:</p>
+  <a href="mailto:info@travelvista.com" class="btn">info@travelvista.com</a>
 </section>
 
+
 <footer>
-    <p>© 2025 TravelVista. All Rights Reserved.</p>
+  <p>© <span id="year"></span> TravelVista — All rights reserved.</p>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
